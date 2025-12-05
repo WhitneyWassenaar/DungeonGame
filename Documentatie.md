@@ -17,23 +17,29 @@ Voor elke situatie maak je een keuze, en dat heeft weer invloed op jouw verhaall
 Dit is het begin van het spel. Je voert jouw naam in en het spel zal jouw naam gebruiken in de events die gaan plaatsvinden.
 Ik wilde graag de opties onder elkaar weergeven. Maar zoals je ziet, lukte dat niet. Natuurlijk wist ik wel dat dit mogelijk moest zijn. 
 Hoe ik dacht dat ik het moest schrijven:``` /n ```
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding4.png"></img>
 
 <b>Output</b>
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding5.png"></img>
  
 
 ## Waar ging het mis?
 Ik had het bijna goed. Het moest zijn: 
+
 ``` \n ``` 
 
 Bron: https://www.datacamp.com/tutorial/python-new-line
 En nu ziet het er zo uit
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding6.png"></img>
+
  <img src="Afbeeldingen/DungeonGame_Afbeelding7.png"></img>
 
 ## Een variabele in brackets weergeven als UPPERCASE
 Ik wil graag dat de variabele: naam wordt geprint in UPPERCASE. Ik wist niet hoe dat moest dus ik had dat opgezocht. Zo ziet het er eerst uit.
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding9.png"></img>
 
 Bron: https://www.w3schools.com/python/ref_string_upper.asp
@@ -46,6 +52,7 @@ Al hoewel de keuzes vaak verschillend kunnen zijn, zullen sommige scenes zich mo
  <img src="Afbeeldingen/DungeonGame_Afbeelding10.png"></img>
 
 <b>Basilisk scene</b>
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding11.png"></img>
 
 Maar omdat ik elke input van de scene met dezelfde variabele naam: ‘optie’ heb gegeven. Is het niet duidelijk welke scene herhaald moet worden.
@@ -54,6 +61,7 @@ Helaas werd het te onoverzichtelijk voor mij. Ik heb het project opnieuw gestart
 Dit keer had ik moeite met het spel opnieuw op te starten wanneer de speler dood was. Het kwam ook voor dat het spel terug ging naar een vorige input, maar niet helemaal aan het begin van het spel.
 
 Er was ook sprake van veel herhaling. Ik heb toen gekeken welke scenes meerdere keren voorkwamen.
+
 | Scene | Aantal |
 | | |
 | Leeuwengrot van Sechmet | 1 |
@@ -66,6 +74,7 @@ Er was ook sprake van veel herhaling. Ik heb toen gekeken welke scenes meerdere 
 
 
 Ik moet dus een functie schrijven voor elke scene die herhaald wordt. Op deze manier hoef ik niet stukken code opnieuw te schrijven voor elke optie die uitkomt op de aangewezen scene.
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding12.png"></img>
 
 ## Structuur
@@ -74,11 +83,14 @@ Ook kwam ik later achter dat ik structuur miste in mijn code. Aangezien ik het s
 ## Houd het simpel
 Ik heb serieus bijna een halve dag aan de code gezeten. Ik ben te lang in te veel code blijven hangen. Ik heb uiteindelijk de code weten te schrijven, maar niet zonder enige frustratie.
 Ik dacht serieus dat ik bij elke keuzemogelijkheid een while loop moest gebruiken. Dat zag er dan ongeveer zo uit:
+
 <b>Schematisch</b>
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding13.png"></img>
  
 ## In code
 Hier kan je goed zien dat ik meerde while loops in mijn code heb verwerkt. Het heeft even geduurd want ik ben 2 keer van mening veranderd of al die while loops wel of niet nodig waren. Maar nu weet ik na trial en error dat while loops wel degelijk nodig zijn.
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding14.png"></img>
 
 ## Wanneer zijn while loops nodig?
@@ -90,18 +102,21 @@ int(input('Maak een keuze tussen 1, 2 en 3'))
 Dan wil je dat de speler het getal 1, 2 of 3 invoert. Als de speler dat niet doet en bijvoorbeeld een 4 invoert, dan zal je (als je netjes een if, elif en else statement hebt geschreven) éénmaal de else statement als output te zien krijgen en dan is de code gestopt.
 Maar je wilt juist dat de speler opnieuw een poging kan doen om een getal te kiezen, dus als je de statements in een while loop doet dan wordt de input opnieuw gevraagd totdat de gewenste input wordt ingevoerd. Dit geldt dus voor while True
 Elke input heb ik in een while True gezet.
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding15.png"></img>
  
 ## Try except
 Vooral bij inputs waar een getal ingevoerd moet worden, is het belangrijk dat dit ook wordt gedaan. Wanneer er een enter of een woord wordt ingevoerd, dan ontstaat er een ValueError en dan crasht het programma.
 Dit gebeurt er bij de eerste input. Zonder try except geeft pyhton terecht een error, want python probeert een string om te zetten naar een integer, en dat lukt niet. Als je try except toepast dan gaat de code terug naar de input om opnieuw ingevuld te worden.
 Dit heb ik dus bij elke input toegepast.
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding16.png"></img>
 
 Bron: https://www.youtube.com/watch?v=j_q6NGOwDJo
 
 ## De problematiek bij het Eiland van Thor
 Het viel mij op dat wanneer ik het einde had bereikt (maakt niet uit of speler wel of niet had gewonnen) dat bij sommige routes voorkwam dat de speler terug ging naar een keuzemenu van een stap ervoor. Ik had toen bijna alle routes getest. Dit deed ik door lijnen te trekken over mijn flowchart.
+
 <img src="Afbeeldingen/DungeonGame_Afbeelding17.png"></img>
  
 ## Wat valt je op?
