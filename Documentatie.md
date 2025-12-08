@@ -62,14 +62,15 @@ Dit keer had ik moeite met het spel opnieuw op te starten wanneer de speler dood
 
 Er was ook sprake van veel herhaling. Ik heb toen gekeken welke scenes meerdere keren voorkwamen.
 
-| Scene | Aantal |
-| | |
-| Leeuwengrot van Sechmet | 1 |
-| Slagveld van Teutates | 1 |
-| Basilisk | 2 |
-| Kraken | 2 |
-| Eiland van Thor | 3 |
-| Cerberus | 3 |
+| Scene                    | Aantal |
+|--------------------------|--------|
+| Leeuwengrot van Sechmet  | 1      |
+| Slagveld van Teutates    | 1      |
+| Basilisk                 | 2      |
+| Kraken                   | 2      |
+| Eiland van Thor          | 3      |
+| Cerberus                 | 3      |
+
 
 
 
